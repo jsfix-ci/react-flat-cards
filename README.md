@@ -1,7 +1,7 @@
 # React Flat Cards
 A react-based component for displaying sheet cards.
 
-![N|Solid](/public/logo192.png?raw=true)
+[![N|Solid](/logo192.png?raw=true)](https://github.com/Oz-Hershco/react-flat-cards)
 
 ## Basic Usage
 ```js
@@ -22,7 +22,7 @@ function App() {
 }
 ```
 
-![N|Solid](/public/example1.png?raw=true)
+![N|Solid](/example1.png?raw=true)
 
 ## Props
 | Name | Type | Default | Description | 
