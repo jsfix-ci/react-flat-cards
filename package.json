@@ -4,7 +4,7 @@
   "author": "Oz Hershco",
   "keywords": ["react", "components", "ui"],
   "version": "1.0.0",
-  "private": true,
+  "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.1",
