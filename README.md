@@ -5,7 +5,8 @@ A react-based component for displaying sheet cards.
 
 ## Basic Usage
 ```js
-import SheetCard from './Components/SheetCard/SheetCard';
+import { FlatCard } from 'react-flat-cards';
+
 function App() {
   return (
     <div className="App">
