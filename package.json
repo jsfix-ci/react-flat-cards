@@ -3,7 +3,7 @@
   "description": "A react-based component for displaying sheet cards.",
   "author": "Oz Hershco",
   "keywords": ["react", "components", "ui"],
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
