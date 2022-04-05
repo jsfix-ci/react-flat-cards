@@ -1,5 +1,6 @@
 import './App.scss';
 import FlatCard from './lib/components/FlatCard';
+
 function App() {
   return (
     <div className="App">
