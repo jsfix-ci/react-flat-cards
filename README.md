@@ -3,6 +3,9 @@ A react-based component for displaying sheet cards.
 
 [![N|Solid](https://github.com/Oz-Hershco/react-flat-cards/blob/master/logo192.png?raw=true)](https://github.com/Oz-Hershco/react-flat-cards)
 
+## Install
+Install using `npm i react-flat-cards`
+
 ## Basic Usage
 ```js
 import { FlatCard } from 'react-flat-cards';
