@@ -1,11 +1,20 @@
 const path = require('path')
+const webpack = require('webpack')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: '[name].bundle.css',
+            chunkFilename: '[id].css'
+        }),
+        new webpack.HotModuleReplacementPlugin()
+    ],
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'index.js'
     },
     module: {
         rules: [
@@ -27,10 +36,12 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/i,
+                include: path.resolve(__dirname, 'src/components/styles'),
+                exclude: /node_modules/,
                 use: [
-                    "sass-loader",
-                ],
-            },
+                    "sass-loader"
+                ]
+            }
         ]
     }
 }
