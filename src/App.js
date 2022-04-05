@@ -1,4 +1,4 @@
-import './App.scss';
+import './App.css';
 import FlatCard from './lib/components/FlatCard';
 
 function App() {
