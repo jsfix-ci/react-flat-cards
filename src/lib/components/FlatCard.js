@@ -46,7 +46,7 @@ export default function FlatCard({
                 </div>
 
                 {
-                    readMoreEnabled === true ?
+                    description.length > _readMoreCharacterLimit && readMoreEnabled === true ?
                         (
                             <>
                                 <p className='FlatCard--Description ReadMoreEnabled'>{isShowingMore ? description : description.substring(0, _readMoreCharacterLimit) + "..."}</p>
