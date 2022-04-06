@@ -3,19 +3,8 @@ const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    mode: 'production',
-    plugins: [
-        new MiniCssExtractPlugin({
-            filename: '[name].bundle.css',
-            chunkFilename: '[id].css'
-        }),
-        new webpack.HotModuleReplacementPlugin()
-    ],
+    mode: 'development',
     entry: path.resolve(__dirname, 'src', 'index.js'),
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js'
-    },
     module: {
         rules: [
             {
@@ -35,13 +24,23 @@ module.exports = {
                 }]
             },
             {
-                test: /\.s[ac]ss$/i,
-                include: path.resolve(__dirname, 'src/components/styles'),
-                exclude: /node_modules/,
-                use: [
-                    "sass-loader"
-                ]
+                test: /\.(s(a|c)ss)$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             }
         ]
-    }
+    },
+    resolve: {
+        extensions: ['*', '.js', '.jsx']
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: 'main.bundle.css',
+            chunkFilename: 'main.css'
+        }),
+        new webpack.HotModuleReplacementPlugin()
+    ],
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js'
+    },
 }

@@ -1,0 +1,80 @@
+.FlatCard {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 45em;
+    margin: 1.75em 1em;
+    padding: 1em; }
+  
+  .FlatCard .FlatCard--Img {
+    height: 10em;
+    width: 14em;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #A65303;
+    border-radius: 5px;
+    margin-right: 1em; }
+  
+  .FlatCard .FlatCard--Content {
+    max-width: 20em; }
+  
+  .FlatCard .FlatCard--ContentHeader {
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 2px; }
+  
+  .FlatCard .FlatCard--ContentFooter {
+    background-color: #f2f2f2; }
+  
+  .FlatCard .FlatCard--ContentHeader,
+  .FlatCard .FlatCard--ContentFooter {
+    display: flex;
+    justify-content: space-between; }
+  
+  .FlatCard .FlatCard--Title,
+  .FlatCard .FlatCard--Price {
+    margin: 0;
+    font-size: 14pt;
+    font-weight: 700; }
+  
+  .FlatCard .FlatCard--Price {
+    color: #A65303; }
+  
+  .FlatCard .FlatCard--Description {
+    color: gray;
+    font-weight: 400; }
+  
+  .FlatCard .FlatCard--Description.ReadMoreEnabled {
+    margin-bottom: 0.5em; }
+  
+  .FlatCard .FlatCard--ReadMoreBtn {
+    color: #045766;
+    background-color: transparent;
+    border: 1px solid #045766;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer; }
+  
+  .FlatCard .FlatCard--ReadMoreBtn:active,
+  .FlatCard .FlatCard--ReadMoreBtn.Active {
+    color: white;
+    background-color: #045766;
+    border: 1px solid #045766; }
+  
+  @media only screen and (max-width: 665px) {
+    .FlatCard {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 45em;
+      margin: 1.75em 0; }
+    .FlatCard .FlatCard--Img {
+      height: 10em;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border: 4px solid #A65303;
+      border-radius: 5px;
+      margin-right: 0;
+      margin-bottom: 0.5em; }
+    .FlatCard .FlatCard--Content {
+      max-width: initial; } }
+  
+  

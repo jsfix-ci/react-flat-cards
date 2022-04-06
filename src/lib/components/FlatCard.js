@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './FlatCard.css';
 
 export default function FlatCard({
     thumbnail,
